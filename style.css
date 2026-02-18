@@ -57,7 +57,7 @@ main{
 }
 .content-one{
  border:1px solid black;
- width: 55%;
+ width: 800px;
 }
 .content-one h1{
   font-size: 45px;
@@ -129,7 +129,7 @@ i{
   color: white;
 }
 .content-four{
-  width: 30%;
+  width: 400px;
   margin-top: 20px;
 }
 
@@ -233,9 +233,9 @@ i{
   width: 280px;
   border-radius: 5px;
   background: #b0e0e6;
-   font-size: 20px;
-   border: none;
-    margin-right: 12px;
+  font-size: 20px;
+  border: none;
+  margin-right: 12px;
 }
 marquee{
 margin-top: 50px;
