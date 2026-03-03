@@ -641,7 +641,7 @@ footer{
 
   .main-div h1.main-x {
     font-size: 40px;
-    margin-left: 170px;
+    margin-left: 180px;
   }
   .main-div a {
     display: none;
@@ -677,7 +677,6 @@ footer{
   }
 
   .contact, .resume {
-    width: 140px;
     padding: 10px;
     margin: 5px;
   }
