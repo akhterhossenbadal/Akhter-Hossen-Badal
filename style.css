@@ -78,9 +78,7 @@ main{
   font-family:sans-serif;
   cursor: pointer;
 }
-.contact:hover{
-  width: 165px;
-}
+
 .resume{
   padding: 13px;
   border-radius:17px;
@@ -92,9 +90,6 @@ main{
   border:none;
   font-family:sans-serif;
   background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
-}
-.resume:hover{
-  width: 165px;
 }
 
 .name{
@@ -646,7 +641,7 @@ footer{
 
   .main-div h1.main-x {
     font-size: 40px;
-    margin-left: 100px;
+    margin-left: 170px;
   }
   .main-div a {
     display: none;
