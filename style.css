@@ -13,41 +13,28 @@ main{
 }
 .main-div{
   display:flex;
+  justify-content: center;
   padding: 10px;
 }
 .main-div a{
   text-decoration: none;
   margin-right: 10px;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px;
   text-align: right;
   color: white;
 }
 .main-div a:hover{
-  color:pink;
+  color: rgb(22 242 179);
 }
 .About{
   text-align: center;
   color:rgb(22 242 179) ;
 }
 .main-x{
-  margin-right: 700px;
   margin-left: 58px;
   font-size: 40px;
   color:rgb(22 242 179);
-}
-.WEB{
-  color: rgb(236 72 153) ;
-}
-
-.content-two{
-  background-image: url(images/profile.jpeg);
-  background-size: cover;
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
-  margin-top: 60px;
-  border: 5px solid white;
 }
 .container-one{
   display: flex;
@@ -65,6 +52,17 @@ main{
   line-height: 58px;
   letter-spacing:2px;
 }
+
+.content-two{
+  background-image: url(images/profile.jpeg);
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  margin-top: 60px;
+  border: 5px solid white;
+}
+
 .contact{
   padding: 13px;
   border-radius:17px;
@@ -95,11 +93,9 @@ main{
 .name{
 color:rgb(236 72 153);
 }
-
 .web{
   color: rgb(22 242 179);
 }
-
 .dot{
   color: pink;
 }
@@ -112,22 +108,19 @@ i{
   margin-top: 25px;
   margin-bottom: 20px;
 }
-
 .container-two{
   display: flex;
   justify-content: space-around;
   margin-top: 5%;
 }
-
 .content-three{
-  width: 50%;
+  width: 800px;
   color: white;
 }
 .content-four{
   width: 400px;
   margin-top: 20px;
 }
-
 .content-four img{
   height: 300px;
   width: 300px;
@@ -137,9 +130,7 @@ i{
   color: rgb(22 242 179);
   font-size: 25px;
   margin-top: 40px;
-  margin-left: 75px;
 }
-
 .content-three h2{
   padding: 10px;
   padding-left: 0%;
@@ -157,9 +148,7 @@ i{
   color: rgb(22 242 179);
   font-size: 25px;
   margin-top: 55px;
-  margin-left: 75px;
 }
-
 .html{
   padding: 15px;
   width: 110px;
@@ -233,30 +222,29 @@ i{
   margin-right: 12px;
 }
 marquee{
-margin-top: 50px;
-margin-bottom: 50px;
-margin-left: 120px;
-margin-right: 120px;
+ margin-top: 100px;
+ margin-bottom: 100px;
 }
 .container-three{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 20px;
 }
 
 .content-five{
-border: 1px solid #4a5272;
-padding: 30px;
-border-radius: 8px;
-margin-bottom: 100px;
-
+ border: 1px solid #4a5272;
+ padding: 30px;
+ border-radius: 8px;
+ margin-bottom: 100px;
 }
 .content-five p{
  margin-bottom: 10px;
  font-size: 33px;
 }
 .content-five input{
-  margin-top: 15px;
-  margin-bottom:15px;
+  margin-top: 12px;
+  margin-bottom:12px;
   width:500px;
   padding: 15px;
   border-radius: 5px;
@@ -274,24 +262,23 @@ margin-bottom: 100px;
 }
 
 textarea{
-   width:500px;
-   height: 100px;
-   padding: 15px;
-   border-radius: 5px;
-   font-size: 20px;
-   margin-top: 8px;
-   margin-bottom: 10px;
-   background: #4a5272;
-   cursor: pointer;
-   resize: none;
-   color: white;
+ width:500px;
+ height: 100px;
+ padding: 15px;
+ border-radius: 5px;
+ font-size: 20px;
+ margin-top: 8px;
+ margin-bottom: 10px;
+ background: #4a5272;
+ cursor: pointer;
+ resize: none;
+ color: white;
 }
 
 .view{
   color: rgb(22 242 179);
   font-size: 25px;
   margin-top: 55px;
-  margin-left: 75px;
 }
 .content-six{
   margin-top:10%;
@@ -303,11 +290,13 @@ textarea{
 
 .Blog{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   box-sizing: border-box;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 12px;
+  margin-bottom: 50px;
+
 }
 
 .Blog-one{
@@ -325,9 +314,7 @@ textarea{
 .Blog-one a:hover{
   color:rgb(224, 165, 154);
 }
-.Blog-one:hover{
-border: 0.5px solid white;
-}
+
 .Blog-one img{
   width:100%;
   height: 200px;
@@ -354,9 +341,7 @@ border: 0.5px solid white;
 .Blog-two a:hover{
   color: rgb(224, 165, 154);
 }
-.Blog-two:hover{
-  border: 0.5px solid white;
-}
+
 .Blog-three{
   height: 400px;
   width: 400px;
@@ -375,9 +360,7 @@ border: 0.5px solid white;
   color: white;
   cursor: pointer;
 }
-.Blog-three:hover{
-  border: 0.1px solid white;
-}
+
 .Blog-four{
  height: 400px;
   width: 400px;
@@ -399,9 +382,7 @@ border: 0.5px solid white;
 .Blog-four a :hover{
   color: rgb(224, 165, 154);
 }
-.Blog-four:hover{
-  border: 0.5px solid white;
-}
+
 
 .box-one{
   height: 400px;
@@ -425,9 +406,7 @@ border: 0.5px solid white;
 .box-one a:hover{
   color: rgb(224, 165, 154);
 }
-.box-one:hover{
-  border: 0.5px solid white;
-}
+
 .blog-text{
   font-size: 20px;
   padding: 10px;
@@ -445,7 +424,6 @@ border: 0.5px solid white;
   color: rgb(22 242 179);
   font-size: 25px;
   margin-top: 55px;
-  margin-left: 75px;
   margin-bottom: 30px;
 }
 
@@ -517,14 +495,6 @@ border: 0.5px solid white;
   margin-top: 55px;
   margin-left: 75px;
 }
-.main-img{
-  background-image: url(images/main.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 500px;
-  border-radius:2%;
-}
 .sent{
   width: 180px;
   border-radius: 8px;
@@ -543,7 +513,7 @@ footer{
   color:white;
   background:#0B0F1D ;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   justify-content: space-between;
   border-top:  1px solid #3e4355;
 }
@@ -626,11 +596,12 @@ footer{
   border-radius: 5px;
 }
 
+/* Responsive Mobile Layout */
+
 @media (max-width: 768px) {
   main {
     margin: 0 15px;
   }
-  
  .one{
   border: none;
  }
@@ -798,5 +769,5 @@ footer{
   footer p{
     margin-top: 80px;
   } 
-}
+};
 
