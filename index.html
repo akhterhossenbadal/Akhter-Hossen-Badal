@@ -3,161 +3,286 @@
 
 <head>
   <meta name="google-site-verification" content="pyPFeOdPpXzKKta3kWgVPvRpUxArvbtdCV2Us2WGupY" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akhter Hossen Badal | Software Engineer</title>
-  <link rel="icon" href="images/Badal.png" type="image/jpeg">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="favicon.png" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#070B14",
+            surface: "#111827",
+            accent: "#00FFB2",
+            accent2: "#0099FF",
+            muted: "#7A8BA8",
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            display: ["Syne", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body>
-  <!-- main content start here -->
-  <main>
-    <header id="nav-bar">
-      <div class="main-div">
-        <a href="#">HOME</a>
-        <a
-          href="https://www.google.com/search?q=Akhter+Hossen+Badal&oq=Akhter+Hossen+Badal&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQIxgnMgYIAhBFGDsyCggDEAAYgAQYogQyCggEEAAYgAQYogQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg5MTc1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&safe=strict">ABOUT</a>
-        <a href="https://www.skillsoft.com/blog/what-is-a-full-stack-developer">SKILL</a>
-        <a href="https://kurigram.polytech.gov.bd/">EDUCATION</a>
-        <a href="https://www.britannica.com/technology/artificial-intelligence">BLOGS</a>
-      </div>
-    </header>
-    <!-- container-one section start -->
-    <section class="container-one">
-      <div class="content-one">
-        <h1>Hello,<br>
-          This is <span class="name">Akhter Hossen Badal</span>.I'm a Full Stack <span class="web">Web
-            Developer</span><span class="dot">.</span></h1>
-        <a href="https://github.com/akhterhossenbadal"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/akhterhossenbadal/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://x.com/akhterhossenx"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.youtube.com/@akhterhossenbadalx"><i class="fa-brands fa-youtube"></i></a>
-       
-        <br>
-        <a href="https://www.linkedin.com/in/akhterhossenbadal/"><button class="contact">Contact Me</button></a>
-        <a href="https://github.com/akhterhossenbadal"><button class="resume">Get Resume</button></a>
-      </div>
-      <div class="content-two">
-      </div>
-    </section>
+<body class="bg-bg text-white font-sans overflow-x-hidden">
 
-    <!-- container-two section start -->
-    <section class="container-two">
-      <div class="content-three">
-        <p>My name is <span class="Badal">Akhter Hossen Badal.</span> I am a professional Full Stack
-          Developer.I am a quick learner with a self-learning attitude.
-          I love to learn and explore new technologies and am passionate about
-          problem-solving.I love almost all the stacks of web application development and love to make
-          the web more open to the world. My core skill is based on JavaScript and I love to do most of the
-          things using JavaScript. I am available for any kind of job opportunity that suits my skills and
-          interests.I am a passionate and curious student of Computer Science and Technology with a growing
-          interest in web development.Over the past year, I have been actively learning and building with Full
-          Stack technologies, including HTML,CSS,JavaScript, and modern frameworks.I believe technology is not
-          just about code it's about solving real-world problems through innovation and creativity. I enjoy
-          exploring new tools, experimenting with ideas, and constantly pushing myself to learn something new every day.
+  <!-- NAV -->
+  <nav class="fixed w-full top-0 z-50 backdrop-blur-xl bg-black/50 border-b border-white/10">
+    <div class="max-w-6xl mx-auto flex justify-between items-center h-16 px-5">
+      <div class="font-display font-bold text-xl">
+        <span class="text-accent">AHBWEB</span>.
+      </div>
+
+      <div class="hidden md:flex gap-8 text-sm text-muted">
+        <a href="#about" class="hover:text-accent">About</a>
+        <a href="#skills" class="hover:text-accent">Skills</a>
+        <a href="#services" class="hover:text-accent">Services</a>
+        <a href="#projects" class="hover:text-accent">Projects</a>
+        <a href="#contact" class="hover:text-accent">Contact</a>
+      </div>
+
+      <a href="#contact" class="bg-accent text-black px-5 py-2 rounded-lg font-semibold">
+        Hire Me
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center pt-24 bg-gradient-to-br from-accent/10 via-transparent to-accent2/10">
+    <div class="max-w-6xl mx-auto px-5 w-full flex flex-col lg:flex-row items-center gap-12">
+
+      <div class="flex-1">
+        <p class="text-accent text-xs tracking-[0.3em] uppercase">Full Stack Web Developer</p>
+
+        <h1 class="text-5xl lg:text-4xl font-display font-extrabold mt-4 leading-tight">
+          Akhter Hossen Badal <br>
+          <!-- <span class="text-accent">Full Stack Web Developer</span> -->
+        </h1>
+
+        <p class="text-muted mt-6 max-w-xl">
+          Hello I am a Full Stack Web Developer & Software Engineer
+          Specialized in building scalable, high-performance web applications using React & Next.js.
+          Committed to clean architecture, efficient solutions, and delivering real value to clients.
         </p>
-      </div>
-      <div class="content-four">
-        <img src="images/download.png" alt="Badal">
-      </div>
-    </section>
+        <div class="flex items-center gap-4 mt-8 ">
+
+          <a href="https://github.com/akhterhossenbadal"
+            class="w-11 h-11 flex items-center justify-center rounded-full border border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/akhterhossenbadal/"
+            class="w-11 h-11 flex items-center justify-center rounded-full border border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="01942832625"
+            class="w-11 h-11 flex items-center justify-center rounded-full border border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="https://x.com/akhterhossenx"
+            class="w-11 h-11 flex items-center justify-center rounded-full border border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+        </div>
 
 
-    <marquee behavior="" direction="">
-      <button class="html">
-        <img src="images/Html.png" alt=""><br>
-        HTML</button>
-      <button class="css">
-        <img src="images/download (1).png" alt="css">
-        <br>CSS
-      </button>
-      <button class="javascript">
-        <img src="images/JavaScript-logo.png" alt=javascript><br>
-        JAVASCRIPT</button>
-      <button class="git">
-        <img src="images/git.png" alt="git"><br>
-        GIT</button>
-      <button class="react"><img src="images/images (2).png" alt="img"><br>
-        REACT.JS</button>
-      <button class="github"><img src="images/github.png" alt=""><br>
-        GITHUB</button>
+        <div class="flex gap-4 mt-8 flex-wrap">
+          <a href="#projects" class="bg-accent text-black px-6 py-3 rounded-lg font-semibold">
+            View Projects
+          </a>
+          <a href="#contact" class="border border-white/20 px-6 py-3 rounded-lg">
+            Contact Me
+          </a>
+        </div>
 
-      <button class="taliund">
-        <img src="images/images (4).png" alt="img"><br>
-        TALIUND CSS</button>
-
-    </marquee>
-
-    <section class="Blog">
-      <div class="Blog-one">
-        <img src="images/blog.webp" alt="Blog">
-        <a
-          href="https://dev.to/masood_akhtarvaheed_726d/is-vibe-coding-dead-the-uncomfortable-truth-about-ai-agents-and-developer-productivity-4kl0">
-          <h3 class="blog-text">Is Vibe Coding Dead? The Uncomfortable Truth About AI Agents and Developer Productivity
-          </h3>
-        </a>
-        <p class="blog-para">Introduction Significant change is taking place in the rapidly evolving field of...</p>
-
-      </div>
-      <div class="Blog-two">
-        <img src="images/ok copy.gif" alt="Blog">
-        <a href="https://dev.to/holasoymalva/programming-is-becoming-prompting-2odn">
-          <h3 class="blog-text">Programming Is Becoming Prompting</h3>
-        </a>
-        <p class="blog-para">Are we losing coding creativity as AI blurs the lines between programming and prompting?
-          Welcome to the new reality.</p>
-
+        <!-- stats -->
+        <div class="grid grid-cols-3 gap-4 mt-10">
+          <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+            <div class="text-accent text-2xl font-bold">20+</div>
+            <div class="text-muted text-xs">Projects</div>
+          </div>
+          <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+            <div class="text-accent text-2xl font-bold">2+</div>
+            <div class="text-muted text-xs">Years</div>
+          </div>
+          <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+            <div class="text-accent text-2xl font-bold">100%</div>
+            <div class="text-muted text-xs">Dedication</div>
+          </div>
+        </div>
       </div>
 
-      <div class="Blog-four">
-        <img src="images/v.webp" alt="Blog">
-        <a href="https://dev.to/devteam/what-was-your-win-this-week-n0">
-          <h3 class="blog-text">What was your win this week!?</h3>
-        </a>
-        <p class="blog-para">👋👋👋👋 Looking back on your week -- what was something you're proud of? All wins count --
-          big or...</p>
+      <!-- avatar -->
+      <div class="w-72 h-72 rounded-full p-1 border-4 border-green-500">
+        <div class="w-full h-full rounded-full overflow-hidden">
+          <img src="badal.jpg" alt="Badal" class="w-full h-full object-cover">
+        </div>
+      </div>
 
+    </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="text-3xl font-display font-bold mb-6">About Me</h2>
+      <p class="text-muted leading-relaxed max-w-2xl">
+        I'm a passionate Full Stack Web Developer who loves turning ideas into responsive, user-friendly web
+        applications with
+        clean code and real-world impact in mind.
+
+        What I Do:
+        • Build scalable full-stack web applications
+        • Develop fast, responsive UIs with React & Next.js
+        • Write clean, maintainable & efficient code
+        • Solve complex problems with creative thinking
+        • Collaborate closely with clients to deliver results
+
+        Tech Stack: HTML · CSS · JavaScript · React · Next.js · Node.js · MongoDB · Tailwind CSS · Git & GitHub
+
+        Currently Focusing On:
+        Enhancing my skills in scalable architecture, modern UI development & full-stack best practices. I believe
+        technology
+        isn't just about writing Code it's about solving real problems through innovation, creativity, and clean design.
+        Open to
+        opportunities, collaborations & exciting projects. Let's connect and build something great together!
+
+        Contact Me!
+        Email : akhterhossenbadalofficial610@gmail.com
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="text-3xl font-display font-bold mb-10">Services</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-surface p-6 rounded-xl border border-white/10 hover:border-accent/40 transition">
+          <i class="fa-solid fa-code text-accent text-2xl"></i>
+          <h3 class="font-bold mt-4">Web Development</h3>
+          <p class="text-muted text-sm mt-2">Modern full stack web apps with React & Node.js</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-xl border border-white/10 hover:border-accent/40 transition">
+          <i class="fa-solid fa-mobile text-accent text-2xl"></i>
+          <h3 class="font-bold mt-4">Responsive UI</h3>
+          <p class="text-muted text-sm mt-2">Pixel perfect mobile-first responsive design</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-xl border border-white/10 hover:border-accent/40 transition">
+          <i class="fa-solid fa-server text-accent text-2xl"></i>
+          <h3 class="font-bold mt-4">Backend API</h3>
+          <p class="text-muted text-sm mt-2">Secure & scalable REST APIs and databases</p>
+        </div>
 
       </div>
-      <div class="Blog-three">
-        <img src="images/cc.webp" alt="Blog">
-        <a
-          href="https://dev.to/devteam/five-challenges-live-better-odds-of-winning-three-closing-this-weekend-and-no-new-challenges-10m7">
-          <h3 class="blog-text"> Five challenges live = better odds of winning! Three closing this weekend, and no new
-            challenges for two weeks.</h3>
-        </a>
-        <p class="blog-last">Hi Everyone! I'm heading out on vacation soon, and as the overseer of all DEV Challenges, I
-          wanted to...</p>
+    </div>
+  </section>
 
+  <!-- SKILLS -->
+  <section id="skills" class="py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="text-3xl font-display font-bold mb-10">Skills</h2>
+
+      <div class="space-y-5">
+
+        <div>
+          <div class="flex justify-between text-sm">
+            <span>Frontend (React)</span><span class="text-accent">90%</span>
+          </div>
+          <div class="h-2 bg-white/10 rounded-full">
+            <div class="h-2 bg-accent rounded-full w-[90%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm">
+            <span>Backend (Node.js)</span><span class="text-accent">85%</span>
+          </div>
+          <div class="h-2 bg-white/10 rounded-full">
+            <div class="h-2 bg-accent2 rounded-full w-[85%]"></div>
+          </div>
+        </div>
 
       </div>
-      <div class="box-one">
-        <img src="images/nn copy.webp" alt="Blog">
-        <a href="https://dev.to/isaachagoel/why-llm-memory-still-fails-a-field-guide-for-builders-3d78">
-          <h3 class="blog-text">Why LLM Memory Still Fails - A Field Guide for Builders</h3>
-        </a>
-        <p class="blog-para">Introduction Significant change is taking place in the rapidly evolving field of...</p>
+    </div>
+  </section>
 
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="text-3xl font-display font-bold mb-10">Projects</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-surface p-6 rounded-xl border border-white/10 hover:scale-105 transition">
+          <div class="text-4xl">🛒</div>
+          <h3 class="font-bold mt-4">E-Commerce</h3>
+          <p class="text-muted text-sm">Full stack shopping platform</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-xl border border-white/10 hover:scale-105 transition">
+          <div class="text-4xl">💬</div>
+          <h3 class="font-bold mt-4">Chat App</h3>
+          <p class="text-muted text-sm">Real-time messaging system</p>
+        </div>
+
+        <div class="bg-surface p-6 rounded-xl border border-white/10 hover:scale-105 transition">
+          <div class="text-4xl">📋</div>
+          <h3 class="font-bold mt-4">Task Manager</h3>
+          <p class="text-muted text-sm">Productivity web app</p>
+        </div>
 
       </div>
-      <div class="box-one">
-        <img src="images/nb.webp" alt="Blog">
-        <a href="https://dev.to/sarahcssiqueira/using-github-copilot-to-manage-issues-and-save-time-3549">
-          <h3 class="blog-text">Using GitHub Copilot to Manage Issues (and Save Time)</h3>
-        </a>
-        <p class="blog-para">Using GitHub Copilot to Manage Issues (and Save Time)</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24">
+    <div class="max-w-4xl mx-auto px-5 text-center">
+
+      <h2 class="text-3xl font-display font-bold">Let’s Work Together</h2>
+      <p class="text-muted mt-4">Have a project? Let’s build something amazing.</p>
+
+      <div class="grid md:grid-cols-2 gap-4 mt-10">
+        <input class="p-3 bg-white/5 border border-white/10 rounded-lg" placeholder="Name" />
+        <input class="p-3 bg-white/5 border border-white/10 rounded-lg" placeholder="Email" />
+        <textarea class="md:col-span-2 p-3 bg-white/5 border border-white/10 rounded-lg" rows="5"
+          placeholder="Message"></textarea>
+        <button class="md:col-span-2 bg-accent text-black py-3 rounded-lg font-semibold">
+          Send Message
+        </button>
       </div>
-    </section>
-  </main>
-  <!-- main content end here -->
-  <footer>
-    <p>Developer Portfolio by Akhter Hossen Badal</p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 text-center text-muted border-t border-white/10">
+    © 2026 Akhter Hossen Badal.
   </footer>
-  <!-- Footer Content End Here -->
+
 </body>
 
 </html>
