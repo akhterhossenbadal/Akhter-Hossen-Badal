@@ -1,0 +1,7 @@
+# LLMs.txt
+
+User-agent: *
+Allow: /blog/
+Disallow: /private/
+
+# Only public blog allowed
